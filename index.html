@@ -2,13 +2,14 @@
 <html>
   <head>
     <title>Suggestion Box</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js">
+    </script>
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/
 css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="js/vendor/angular.min.js">
-    </script>
+
   </head>
   <body ng-app="SuggestionBox" ng-controller="HomeController">
-    <h1> {{ helloWorld }} </h1>
+    <!-- <h1> {{ helloWorld }} </h1> -->
 
     <div class="suggestion" ng-repeat="post in posts">
       <span class="title"> {{post.title}} </span>
@@ -22,9 +23,13 @@ css/bootstrap.min.css" rel="stylesheet">
     <!-- Controllers -->
     <script type="text/javascript" src="js/controllers/HomeController.js"></script>
 
-
     <!-- Services -->
     <scirpt type="text/javascript" src="js/services/suggestions.js"></script>
+
+
+
+
+
 
   </body>
 </html>
